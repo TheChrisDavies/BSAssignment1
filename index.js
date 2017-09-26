@@ -9,6 +9,7 @@ $(function hideAlbums() {
     $('.hidden').hide();
 });
 
+//Shows extra albums when the more button is clicked and hides the button
 function showAlbums() {
 
     $("#morebutton").click(function () {
@@ -16,20 +17,16 @@ function showAlbums() {
         $('#morebutton').hide();
     });
 }
-function imageChange(){
-    $('.mainimage').click(function() {
+//Increases the size of the main image 5% and reduces it back to normal in the same animation
+function imageChange() {
+    $('.mainimage').hover(function () {
         $('.mainimage').animate({
-            height: '+=10%',
-            width: '+=10%'
-        });
+            height: '+=5%',
+            width: '+=5%'
+        }, 'slow');
+        $('.mainimage').animate({
+            height: '-=5%',
+            width: '-=5%'
+        }, 'slow');    
     });
-}
-
-
-/*$("button").click(function(){
-    $("div").animate({
-        left: '250px',
-        height: '+=150px',
-        width: '+=150px'
-    });
-})*/
+};
