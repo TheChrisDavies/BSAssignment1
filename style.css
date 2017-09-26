@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: pink;
+}
+
+img.mainimage {
+    border: 3px solid gold;
+    width: 33%;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
