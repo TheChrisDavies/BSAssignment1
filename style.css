@@ -6,9 +6,11 @@ body {
 }
 h1 {
     text-align: center;
+    font-family: 'Homemade Apple', cursive;
 }
 h1:hover{
     color: black;
+    filter: invert(100%);
 }
 
 img.mainimage {
@@ -33,7 +35,7 @@ img.mainimage:hover{
 }
 
 img.album {
-    height: 300px;
+    max-height: 200px;
     width: auto;
     border: 3px solid #FF0055;
 }
