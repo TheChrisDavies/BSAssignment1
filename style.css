@@ -1,18 +1,28 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    
-    background: linear-gradient(pink, #F34165);
-    color: #628A61;
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }
-h1 {
+h1, h2{
     text-align: center;
     font-family: 'Homemade Apple', cursive;
+    
 }
 h1:hover{
     color: black;
     filter: invert(100%);
 }
+body {
+    background: #F34165;
+    color: #628A61;
+}
+img{
+    width: 100%;
+}
+/*Old formatting*/
 
+
+/*
+background: linear-gradient(pink, #F34165);
 img.mainimage {
     border: 3px solid gold;
     width: 33%;
@@ -43,7 +53,7 @@ img.album:hover{
     margin-right: auto 
 }
 #morebutton {
-    background-color: #4CAF50; /* Green */
+    background-color:
     border: none;
     color: white;
     padding: 15px 32px;
@@ -54,5 +64,5 @@ img.album:hover{
     margin-left: auto;
     margin-right: auto;
 } 
-
+*/
 
