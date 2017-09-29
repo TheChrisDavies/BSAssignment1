@@ -1,3 +1,6 @@
+body{
+    box-sizing: border-box;
+}
 .bg-white {
     background-color: #ffffff !important;
 }
@@ -15,11 +18,15 @@ h1:hover{
     filter: invert(100%);
 }
 body {
-    background: #F34165;
-    color: #628A61;
+    background: red;
+    color: black;
 }
 img{
     width: 100%;
+}
+.bio-main
+{
+    border: 2px solid gold;
 }
 /*Old formatting*/
 
