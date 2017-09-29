@@ -12,10 +12,15 @@ h1, h2{
     text-align: center;
     font-family: 'Homemade Apple', cursive;
     color: white;    
-}/*
+}
+h1:hover{
+    color: black;
+    filter: invert(100%);
+}
+/*Overlay styling*/
 .container-overlay {
     position: relative;
-    width: 50%;
+    width: 100%;
   }
 .overlay {
     position: absolute;
@@ -27,9 +32,9 @@ h1, h2{
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-    background-color: #008CBA;
+    background-color: blue;
   }
-  .text {
+  .overlay-text {
     color: white;
     font-size: 20px;
     position: absolute;
@@ -37,11 +42,12 @@ h1, h2{
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-  }*/
-h1:hover{
-    color: black;
-    filter: invert(100%);
-}
+  }
+  .container-overlay:hover .overlay {
+    opacity: .75;
+  }
+  
+
 body {
     background: red;
     color: black;
