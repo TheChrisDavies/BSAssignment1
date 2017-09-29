@@ -4,6 +4,7 @@ $(document).ready(function () {
     showAlbums();
     imageChange();
     hideSpotify();
+    showSpotify();
 });
 //Hides albums on load
 $(function hideAlbums() {
@@ -20,6 +21,11 @@ function showAlbums() {
         $('.hidden').show();
         $('#morebutton').hide();
     });
+}
+function showSpotify(){
+    $('.btn-spotify'.click(function(){
+        
+    }))
 }
 /* $(".next").click(function () {
   $(this).closest(".stage").fadeOut().next().fadeIn();
