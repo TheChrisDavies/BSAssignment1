@@ -11,9 +11,9 @@ $(function hideAlbums() {
     $('.hidden').hide();
 });
 // Hide spotify on load
-$(function hideSpotify(){
+function hideSpotify(){
     $('.spotify').hide();
-})
+}
 //Shows extra albums when the more button is clicked and hides the button
 function showAlbums() {
 
@@ -22,10 +22,11 @@ function showAlbums() {
         $('#morebutton').hide();
     });
 }
+//This doesn't work
 function showSpotify(){
-    $('.btn-spotify'.click(function(){
-        
-    }))
+    $('.btn-spotify').click(function(){
+        $(this).closest(".spotify").show().next();
+    })
 }
 /* $(".next").click(function () {
   $(this).closest(".stage").fadeOut().next().fadeIn();
