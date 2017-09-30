@@ -1,33 +1,28 @@
 // A $( document ).ready() block.
 $(document).ready(function () {
     //your jquery method blocks here 
-    showAlbums();
+    
     imageChange();
     hideSpotify();
     showSpotify();
-});
-//Hides albums on load
-$(function hideAlbums() {
-    $('.hidden').hide();
-});
-// Hide spotify on load
-function hideSpotify(){
-    $('.spotify').hide();
-}
-//Shows extra albums when the more button is clicked and hides the button
-function showAlbums() {
 
-    $("#morebutton").click(function () {
-        $('.hidden').show();
-        $('#morebutton').hide();
-    });
-}
+
+       
+});
+
+ // Hide spotify on load
+ $(function hideSpotify(){
+    $('.spotify').hide();
+});
+
 //This doesn't work
-function showSpotify(){
+$(function showSpotify(){
     $('.btn-spotify').click(function(){
-        $(this).closest(".spotify").show().next();
+        //$(".spotify").toggle();
+        $('.spotify').toggle('slow');
+              
     })
-}
+});
 /* $(".next").click(function () {
   $(this).closest(".stage").fadeOut().next().fadeIn();
 });
