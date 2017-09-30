@@ -5,7 +5,7 @@ $(document).ready(function () {
     imageChange();
     hideSpotify();
     showSpotify();
-    appendText();
+    appendComment();
 
 
 });
@@ -14,42 +14,30 @@ $(document).ready(function () {
 $(function hideSpotify() {
     $('.spotify').hide();
 });
-
+//Toggle Spotify playlists on button click
 $(function showSpotify() {
     $('.btn-spotify').click(function () {
         $('.spotify').toggle('slow');
     })
 });
-$(function appendText() {
+// JQuery Comment functionality
+$(function appendComment() {
     $('.btn-comment').click(function () {
-        console.log('Comment button clicked');
-
         var commentName = $("#usr").val();
         var commentText = $("#comment").val();
-        //var commentName = $("<p></p>").text('Commenter Wrote:');
-        //var commentText = $("<p></p>").text('Comment Text');
-        $('#thecomment').append('<div class="bg-white col-xs-12 col-sm-12 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0">' + commentName + 'wrote: <br/> ' + commentText + '</div>');
-        // 
+        $('#thecomment').append('<div class="bg-white col-xs-12 col-sm-12 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0">' + commentName + ' wrote: <br/> ' + commentText + '</div>');
     })
-
 });
 
-/* $(".next").click(function () {
-  $(this).closest(".stage").fadeOut().next().fadeIn();
+//Animation of main image
+$(".mainimage").hover(function () {
+    console.log('hovered');
+    $('.mainimage').animate({
+        width: '-=5px',
+        height: '-=5px'
+    }, 'slow');
+    $('.mainimage').animate({
+        width: '+=5px',
+        height: '+=5px'
+    }, 'slow');
 });
-$(".back").click(function () {
-  $(this).closest(".stage").fadeOut().prev().fadeIn();
-}); */
-//Increases the size of the main image 5% and reduces it back to normal in the same animation
-function imageChange() {
-    $('.mainimage').hover(function () {
-        $('.mainimage').animate({
-            height: '+=5%',
-            width: '+=5%'
-        }, 'slow');
-        $('.mainimage').animate({
-            height: '-=5%',
-            width: '-=5%'
-        }, 'slow');
-    });
-};
