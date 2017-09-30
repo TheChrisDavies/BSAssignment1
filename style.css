@@ -2,7 +2,7 @@ body{
     box-sizing: border-box;
 }
 .bg-white {
-    background-color: #ffffff !important;
+    background-color: #ffffff;
 }
 .col-centered{
     float: none;
